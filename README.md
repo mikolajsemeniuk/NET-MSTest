@@ -12,6 +12,9 @@ dotnet sln add source/Logic
 
 dotnet add source/Tests reference source/Logic
 dotnet test
+
+dotnet publish tests -o source/Tests/out
+dotnet vstest source/Tests/out/Tests.dll
 ```
 all:
 ```sh
